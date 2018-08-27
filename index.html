@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <script type="text/javascript" src="http://tajs.qq.com/stats?sId=65910187" charset="UTF-8"></script> 
+  <!-- 腾讯ta 监控使用量 -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no"/>
+    <title>e 能源</title>
+    <script>
+      // 适配js
+      (function (doc, win) {
+        var docEl = doc.documentElement;
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+        recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            docEl.style.fontSize = 50 * (clientWidth / 375) + 'px';
+        };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+      }(document,window));
+    </script>
+  </head>
+  <body>
+    <div class="one-top-px"></div>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script src="./static/js/iscroll-probe.js"></script>
+    <script src="./static/js/zepto.js"></script>
+    <script src="./static/js/chart.min.js"></script>
+  </body>
+</html>

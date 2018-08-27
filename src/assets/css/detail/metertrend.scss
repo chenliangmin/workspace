@@ -1,0 +1,57 @@
+#metertrend{
+    .metertrend_tab{
+        height: 1rem;
+        text-align: center;
+        line-height: 1rem;
+        font-size: .34rem;
+        color:#4c7bfd;
+        font-weight: bold;
+        background:#f9f9f9;
+        position: relative;
+        margin-bottom: .3rem;
+        z-index: 11;
+        span{
+            margin-left: .3rem;
+            display: block;
+            background: url(../../../static/images/back.png) no-repeat center;
+            background-size: .35rem .46rem;
+            height: 1rem;
+            width: .35rem;
+            position: absolute;
+        }
+    }
+    .metertrend_wrapper{
+        position: absolute;
+        top: 1.3rem;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        .canvas_wrapper{
+            background: #fff;
+            margin-bottom: .3rem;
+            padding: .45rem .3rem;
+            .header_title{
+                margin-bottom: .45rem;
+                line-height: .58rem;
+                span{
+                    color: #4c7bfd;
+                    font-size: .24rem;
+                    font-weight: bold;
+                }
+                button{
+                    float: right;
+                    background: #fff;
+                    height: .58rem;
+                    width: 1.5rem;
+                    text-align: center;
+                    outline: none;
+                    color: #4c7bfd;
+                    border: solid .01rem #d4dbe1;
+                    border-radius: .1rem;
+                    font-size: .24rem;
+                }
+            }
+        }
+    }
+    
+}

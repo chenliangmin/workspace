@@ -1,0 +1,91 @@
+@mixin no_wrap{
+    color: #979797;
+    width: 5rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+@mixin font_st{
+    float: right;
+    font-size: .22rem;
+    font-weight: bold;
+}
+@mixin padding_st{
+    padding-left: .52rem;
+    height: .42rem;
+    line-height: .42rem;
+}
+#order{
+    .order_wrapper{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 1rem;
+        bottom: 0;
+        .order_ul{
+            padding: .3rem 0;
+            .order_li{
+                background: #fff;
+                padding: .13rem .56rem 0 .48rem;
+                position: relative;
+                margin-bottom:.3rem; 
+                .order_bianhao{
+                    font-size: .3rem;
+                    color: #444;
+                    line-height: .8rem;
+                    overflow: hidden;
+                    .meter_number{
+                        float: left;
+                        font-weight: bold;
+                    }
+                    .red{
+                        color: #ff3234;
+                        @include font_st;
+                    }
+                    .green{
+                        color: #4c7bfd;
+                        @include font_st;
+                    }
+                    .orange{
+                        color: #ff952f;
+                        @include font_st;
+                    }
+                    .gray{
+                        color: #979797;
+                        @include font_st;
+                    } 
+                }
+                .order_address{
+                    background: url(../../static/images/location_03.png) no-repeat .08rem center ;
+                    background-size: .2rem .26rem;
+                    @include no_wrap;
+                }
+                .order_location{
+                    background: url(../../static/images/location_06.png) no-repeat .08rem center;
+                    background-size: .25rem .25rem;
+                    @include no_wrap;
+                }
+                .order_code{
+                    background: url(../../static/images/code_03.png) no-repeat .08rem center;
+                    background-size: .3rem .3rem;
+                    color: #ff952f;
+                }
+                .order_foot{
+                    height: .77rem;
+                    line-height: .77rem;
+                    overflow: hidden;
+                    .order_time{
+                        color: #979797;
+                        float: left;
+                    }
+                    .order_number{
+                        float: right;
+                    }
+                }
+              
+            }
+        }
+    }
+    
+ 
+}

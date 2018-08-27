@@ -1,0 +1,206 @@
+@mixin right{ 
+    position: absolute;
+    width: .12rem;
+    height: .56rem;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    border-radius:.02rem ;
+}
+@mixin no_wrap{
+    width: 5rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.ammeter_wrapper{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1rem;
+    bottom: 0;
+    .ammeter_ul{
+        padding: .3rem 0;
+        .ammeter_li{
+            background: #fff;
+            padding: .13rem .56rem .56rem .48rem;
+            position: relative;
+            margin-bottom:.3rem;
+            .li_title{
+                line-height: .62rem;
+                color: #333333;
+            }
+            .red{
+                width: 100%;
+                height: 1.54rem;
+                position: relative;
+                .li_content{
+                    width: 6.34rem;
+                    height: 1.54rem;
+                    border: solid .02rem #f15467;
+                    border-radius: .1rem;
+                    display: flex;
+                    display: -webkit-flex;
+                    position: relative;
+                    overflow: hidden;
+                    .dianlian_content{
+                        width: 2.1rem;
+                        height: .8rem;
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        background: url(../../../static/images/enery_03.png) no-repeat;
+                        background-size: .35rem .76rem;
+                        transform: translate(-1.05rem,-.4rem);
+                        -webkit-transform: translate(-1.05rem,-.4rem);
+                        color: #888888;
+                        font-size: .5rem;
+                        font-weight: bold;
+                        line-height: .8rem;
+                        padding-left: .48rem;
+                    }
+                    .dianlian_l{
+                        height: 100%;
+                        background: #f15467;
+                    }
+                }
+                .dianlian_right{
+                    @include right;
+                    background: #f15467;
+                    
+                }
+                
+            }
+            .orange{
+                width: 100%;
+                height: 1.54rem;
+                position: relative;
+                .li_content{
+                    width: 6.34rem;
+                    height: 1.54rem;
+                    border: solid .02rem #f6bb45;
+                    border-radius: .1rem;
+                    display: flex;
+                    display: -webkit-flex;
+                    position: relative;
+                    overflow: hidden;
+                    .dianlian_content{
+                        width: 2.1rem;
+                        height: .8rem;
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        background: url(../../../static/images/enery_03.png) no-repeat;
+                        background-size: .35rem .76rem;
+                        transform: translate(-1.05rem,-.4rem);
+                        -webkit-transform: translate(-1.05rem,-.4rem);
+                        color: #888888;
+                        font-size: .5rem;
+                        font-weight: bold;
+                        line-height: .8rem;
+                        padding-left: .48rem;
+                    }
+                    .dianlian_l{
+                        height: 100%;
+                        background: #f6bb45;
+                    }
+                }
+                .dianlian_right{
+                    @include right;
+                    background: #f6bb45;
+                        
+                }
+            }
+            .green{
+                width: 100%;
+                height: 1.54rem;
+                position: relative;
+                .li_content{
+                    width: 6.34rem;
+                    height: 1.54rem;
+                    border: solid .02rem #8cc14f;
+                    border-radius: .1rem;
+                    display: flex;
+                    display: -webkit-flex;
+                    position: relative;
+                    overflow: hidden;
+                    .dianlian_content{
+                        width: 2.1rem;
+                        height: .8rem;
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        background: url(../../../static/images/enery_03.png) no-repeat;
+                        background-size: .35rem .76rem;
+                        transform: translate(-1.05rem,-.4rem);
+                        -webkit-transform: translate(-1.05rem,-.4rem);
+                        color: #888888;
+                        font-size: .5rem;
+                        font-weight: bold;
+                        line-height: .8rem;
+                        padding-left: .48rem;
+                    }
+                    .dianlian_l{
+                        height: 100%;
+                        background: #8cc14f;
+                    }
+                }
+                .dianlian_right{
+                    @include right;
+                    background: #8cc14f;
+                    
+                }
+            }
+            .li_meterno{
+                font-size: .3rem;
+                font-weight: bold;
+                color: #444;
+                line-height: .8rem;
+                @include no_wrap;
+            }
+            .li_meteraddress{
+                background: url(../../../static/images/location_03.png) no-repeat .08rem center ;
+                padding-left: .52rem;
+                height: .42rem;
+                line-height: .42rem;
+                background-size: .2rem .26rem;
+                color: #979797;
+                @include no_wrap;
+            }
+            .li_metername{
+                background: url(../../../static/images/location_06.png) no-repeat .08rem center;
+                padding-left: .52rem;
+                height: .42rem;
+                line-height: .42rem;
+                background-size: .25rem .25rem;
+                color: #979797;
+                @include no_wrap;
+            }
+            .buy_ammeter{
+                position: absolute;
+                right: .56rem;
+                bottom: .93rem;
+                background: #f15467;
+                color: #fff;
+                width: 1.4rem;
+                height: .68rem;
+                text-align: center;
+                line-height: .68rem;
+                border-radius: .1rem;
+            }
+        }
+    }
+}
+
+.add_ammeter{
+    position: fixed;
+    right: .4rem;
+    bottom: 1rem;
+    width: .8rem;
+    height: .8rem;
+    background:#fff url(../../../static/images/add.png) no-repeat center;
+    background-size: .57rem .52rem;
+    border-radius:50%;
+    box-shadow: 0 0 .3rem #888888;
+}

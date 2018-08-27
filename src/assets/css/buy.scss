@@ -1,0 +1,152 @@
+@mixin no_wrap{
+    padding-left: .52rem;
+    height: .42rem;
+    line-height: .42rem;
+    color: #979797;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#buy{
+    .buy_tab{
+        height: 1rem;
+        text-align: center;
+        line-height: 1rem;
+        font-size: .34rem;
+        font-weight: bold;
+        background:#f9f9f9;
+        position: relative;
+        z-index: 11;
+        span{
+            margin-left: .3rem;
+            display: block;
+            background: url(../../static/images/back.png) no-repeat center;
+            background-size: .35rem .46rem;
+            height: 1rem;
+            width: .35rem;
+            position: absolute;
+        }
+    }
+    .iscroll_buy{
+        position: absolute;
+        top: 1.3rem;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        .buyerInfo{
+            background: #fff;
+            padding: .13rem .5rem .48rem .3rem;
+            border-bottom: solid .01rem #f3f3f3;
+            .eneryCard{
+                font-size: .3rem;
+                font-weight: bold;
+                color: #444;
+                line-height: .8rem;
+            }
+            .buyer_address{
+                background: url(../../static/images/location_03.png) no-repeat .08rem center ;
+                background-size: .2rem .26rem;
+                @include no_wrap;
+            }
+            .buyer_location{
+                background: url(../../static/images/location_06.png) no-repeat .08rem center; 
+                background-size: .25rem .25rem;
+                @include no_wrap;
+            }
+        }
+        .monetary{
+            background: #fff;
+            padding: .13rem .5rem .48rem .3rem;
+            .monetary_title{
+                font-size: .3rem;
+                font-weight: bold;
+                color: #444;
+                line-height: .8rem;
+            }
+            ul{
+                overflow: hidden;
+                li{
+                    width: 3.22rem;
+                    height: 1.3rem;
+                    display: block;
+                    float: left;
+                    line-height: 1.3rem;
+                    padding-left: 1.1rem;
+                    font-size: .5rem;
+                    color: #444444;
+                    white-space: nowrap;
+                    margin-bottom: .25rem;
+                    border-radius: .15rem;
+                    position: relative;
+                    background:#f3f3f3 url(../../static/images/money_03.png) no-repeat .87rem .41rem;
+                    background-size: .22rem .32rem;
+                    
+                }
+                li:last-of-type{
+                    text-align: center;
+                    padding-left: 0;
+                    background: #f3f3f3;
+                    font-size: .32rem;
+                }
+                .liActive{
+                    background: #0b8dff url(../../static/images/money_06.png) no-repeat .87rem .41rem;
+                    background-size: .22rem .32rem;
+                    color: #fff;
+                }
+                .liActive:last-of-type{
+                    background: #0b8dff;
+                }
+                .other_item{
+                    font-size: .34rem;
+                }
+                li:nth-child(2n){
+                    margin-left: .25rem;
+                }
+                #inputMoney{
+                    width: 100%;
+                    height: 1.3rem;
+                    margin: 0;
+                    border: 0;
+                    outline: none;
+                    background: #f3f3f3;
+                    border-radius: .15rem;
+                    padding-left: .5rem;
+                    font-size: .3rem
+                }
+                input::-webkit-input-placeholder { /* WebKit browsers */ 
+                    color: #6e6e6e;
+                } 
+                    
+                input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+                    color: #6e6e6e;
+                } 
+                
+                input::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+                    color: #6e6e6e;
+                } 
+                
+                input:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+                    color: #6e6e6e; 
+                } 
+            }
+        }
+        .buy_intro{
+            padding: .3rem;
+            p{
+                line-height: .5rem;
+                color: #aaa;
+            }
+            button{
+                margin: 1.5rem 0 .5rem;
+                border: 0;
+                background: #0497ff;
+                height: 1.12rem;
+                width: 100%;
+                font-size: .34rem;
+                color: #fff;
+                border-radius: .16rem;
+                outline: none;
+            }
+        }
+    }
+}
