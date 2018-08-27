@@ -1,3 +1,8 @@
+@mixin wra_st{
+    flex: 1;
+    text-align: center;
+    line-height: .6rem;
+}
 #moremonth{
     .moremonth_tab{
         height: 1rem;
@@ -68,14 +73,10 @@
                 display: flex;
                 display: -webkit-flex;
                 .wra_left{
-                    flex: 1;
-                    text-align: center;
-                    line-height: .6rem;
+                    @include wra_st;
                 }
                 .wra_right{
-                    flex: 1;
-                    text-align: center;
-                    line-height: .6rem;
+                    @include wra_st;
                 }
             }
             li:nth-child(odd){

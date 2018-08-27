@@ -1,3 +1,22 @@
+@mixin font_st{
+    color: #979797; 
+    padding-left: .52rem;
+    height: .42rem;
+    line-height: .42rem;
+}
+@mixin span_st{
+    height: .52rem;
+    width: .21rem;
+    display: block;
+    background: url(../../../static/images/orderrecord/pay_sucess_01.png) no-repeat center;
+    background-size: .21rem .21rem;
+    margin-right: .1rem;
+    float: left;
+}
+@mixin words_st{
+    float: right;
+    line-height: .52rem;
+}
 #orderrecord{
     .orderrecord_tab{
         height: 1rem;
@@ -43,19 +62,13 @@
         }
         .orderrecord_address{
             background: url(../../../static/images/location_03.png) no-repeat .08rem center ;
-            padding-left: .52rem;
-            height: .42rem;
-            line-height: .42rem;
             background-size: .2rem .26rem;
-            color: #979797;
+            @include font_st;
         }
         .orderrecord_location{
             background: url(../../../static/images/location_06.png) no-repeat .08rem center;
-            padding-left: .52rem;
-            height: .42rem;
-            line-height: .42rem;
             background-size: .25rem .25rem;
-            color: #979797;
+            @include font_st;
         }
     }
     .orderrecord_result{
@@ -86,16 +99,9 @@
                     background-size: 1.23rem .99rem;
                     .orderrecord_words{
                         span{
-                            height: .52rem;
-                            width: .21rem;
-                            display: block;
-                            background: url(../../../static/images/orderrecord/pay_sucess_01.png) no-repeat center;
-                            background-size: .21rem .21rem;
-                            margin-right: .1rem;
-                            float: left;
+                            @include span_st;
                         }
-                        float: right;
-                        line-height: .52rem;
+                        @include words_st;
                     }
                 }
                 .orderrecord_error{
@@ -103,16 +109,9 @@
                     background-size: 1.51rem 1.11rem;
                     .orderrecord_words{
                         span{
-                            height: .52rem;
-                            width: .21rem;
-                            display: block;
-                            background: url(../../../static/images/orderrecord/pay_error_01.png) no-repeat center;
-                            background-size: .21rem .21rem;
-                            margin-right: .1rem;
-                            float: left;
+                            @include span_st;
                         }
-                        float: right;
-                        line-height: .52rem;
+                        @include words_st;
                     }
                 }
             }
